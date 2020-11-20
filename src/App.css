@@ -1,66 +1,76 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  background-color: #fafafa;
+	margin: 0;
+	background-color: #fafafa;
 }
 
-h1, h2, p {
-  margin: 0;
-  color: #333;
+h1,
+h2,
+p {
+	margin: 0;
+	color: #333;
 }
 
 h1 {
-  font-size: 2.7rem;
-  text-transform: uppercase;
-  transition: all .4s;
-  justify-self: left;
-  margin-top: 10px;
+	font-size: 2.7rem;
+	text-transform: uppercase;
+	transition: all 0.4s;
+	justify-self: left;
+	margin-top: 10px;
 }
 
 .App {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  align-content: center;
-  justify-items: center;
+	width: 100vw;
+	height: 100vh;
+	display: grid;
+	align-content: center;
+	justify-items: center;
 }
 
 .bar-container {
-  display: grid;
-  align-content: center;
-  justify-items: center;
-  padding: 40px 80px;
-  box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.1);
-  transition: all .4s;
-  border-radius: 25px;
-  background-color: #fff;
+	display: grid;
+	align-content: center;
+	justify-items: center;
+	padding: 40px 80px;
+	box-shadow: 2px 4px 8px 4px rgba(0, 0, 0, 0.1);
+	transition: all 0.4s;
+	border-radius: 25px;
+	background-color: #fff;
+	width: 760px;
 }
 
 .bar {
-  width: 100%;
-  text-align: left;
+	width: 100%;
+	text-align: left;
 }
 
 .bar p {
-  margin: 6px 0 0 0;
-  font-size: 20px;
+	margin: 6px 0 0 0;
+	font-size: 20px;
 }
 
 .bar .last-update {
-  font-size: 14px;
-  margin: 6px 0 35px 0;
+	font-size: 14px;
+	margin: 6px 0 35px 0;
 }
 
-@media screen and (max-width: 768px) {
-  .bar-container {
-    padding: 30px 50px;
-  }
+@media screen and (max-width: 800px) {
+	.bar-container {
+		padding: 30px 50px;
+		width: 90vw;
+	}
 
-  h1 {
-    font-size: 2rem;
-    text-transform: uppercase;
-  }
+	.bar {
+		justify-self: left;
+		width: 90%;
+		text-align: left;
+	}
+
+	h1 {
+		font-size: 2rem;
+		text-transform: uppercase;
+	}
 }
